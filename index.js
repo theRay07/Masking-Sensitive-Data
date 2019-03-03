@@ -72,6 +72,6 @@ app.post('/form',function(req,res){
 })
 
 
-app.listen(3000,function(){
-console.log("Hosted");
-})
+app.listen(process.env.PORT||5000,function(){
+  console.log("server started");
+});
